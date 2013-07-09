@@ -1,0 +1,57 @@
+/*------------ Tab Style ------------*/
+ul.tabs {margin: 0;
+		padding: 0;
+		float: left;
+		list-style: none;
+		height: 26px;
+		border-bottom: 1px solid #6593cf;
+		border-left: 1px solid #6593cf;
+		width: 99%;
+	}
+	ul.tabs li {
+		float: left;
+		margin: 0;
+		cursor: pointer;
+		padding: 0px 8px ;
+		height: 25px;
+		line-height: 25px;
+		border: 1px solid #6593cf;
+		border-left: none;
+		background: #ccdbef;
+		overflow: hidden;
+		position: relative;
+		font-size:10px;
+		background:#ccdbef url(../images/tab-normal-shadow.png) no-repeat center bottom;
+	}
+	ul.tabs li:hover {
+		background: #fff;
+	}	
+	ul.tabs li.active{
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+		
+	}
+	.tab_container {
+		border: 1px solid #6593cf;
+		border-top: none;
+		clear: both;
+		float: left; 
+		width: 99.5%;
+		background: #FFFFFF;
+		height:370px;
+	}
+	.tab_content {
+		padding: 10px;
+		font-size:12px;
+		display: none;
+	}
+	.tab_content ul {float:left; clear:both;}
+	.tab_content ul li {float:left; padding-right:3px; padding-bottom:7px;}
+	.tab_content ul li a {font-size:11px;}
+	.tab_content ul li a figure {padding:0px 6px 0px 0px;  float:left;}
+	.tab_content ul li a p {float:left; color:#000;}
+
+	#container {
+		width: 600px;
+		margin: 0 auto;	
+	}

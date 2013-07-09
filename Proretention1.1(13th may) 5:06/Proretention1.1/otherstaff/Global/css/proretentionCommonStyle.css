@@ -1,0 +1,27 @@
+﻿/*** Common Stylesheet for Proretention Application :: Added by Prasath ***/
+/* Styles for Remainder Popup*/
+.reminderBox { border: 1px solid #4094D0; border-bottom: none; max-height: 400px; max-width: 450px; min-height: 100px; min-width: 300px; position: absolute; bottom: 0; right: 5px; -webkit-box-shadow: 0 0 15px rgba(52, 50, 50, 0.5); -moz-box-shadow: 0 0 15px rgba(52, 50, 50, 0.5); box-shadow: 0 0 15px rgba(52, 50, 50, 0.5); background-color: White; }
+.reminder-header { background-color: rgb(64,148,208); height: 25px; width: 100%; }
+.reminder-header .title { color: #fff; font-weight: bold; padding-top: 5ox; display: inline-block; padding: 3px 0px 0px 5px; }
+.close { background-color: #C75050; cursor: pointer; display: inline-block; float: right; font-variant: small-caps; height: 18px; margin-right: 5px; margin-top: 3px; text-align: center; width: 35px; color: #fff; font-size: 12px; }
+.contentinfo { overflow: scroll; padding: 3px; max-height: 350px; }
+.dismiss { text-decoration: none; color: #ed6400; font-weight: bold; font-size: 12px; }
+.container { background: #FFF; moz-box-shadow: 0px 0px 3px 2px #c9c9c9; webkit-box-shadow: 0px 0px 3px 2px #c9c9c9; box-shadow: 0px 0px 3px 2px #c9c9c9; margin: 10px 6px; -ms-filter: \"progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b8b8b8')"; /* For IE 5.5 - 7 */ filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b8b8b8'); }
+.box1 { overflow: hidden; padding-left: 6px; padding-right: 6px; background: #eacf6c; /* Old browsers */ background: -moz-linear-gradient(top, #eacf6c 0%, #f0db91 49%, #f4e4a8 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eacf6c), color-stop(49%,#f0db91), color-stop(100%,#f4e4a8)); background: -webkit-linear-gradient(top, #eacf6c 0%,#f0db91 49%,#f4e4a8 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #eacf6c 0%,#f0db91 49%,#f4e4a8 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #eacf6c 0%,#f0db91 49%,#f4e4a8 100%); /* IE10+ */ background: linear-gradient(to bottom, #eacf6c 0%,#f0db91 49%,#f4e4a8 100%); /* W3C */ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eacf6c', endColorstr='#f4e4a8',GradientType=0 ); /* IE6-9 */ }
+	.box1 p { font-family: Tahoma, Geneva, sans-serif; font-size: 12px; color: #000; }
+.icon1 { float: left; width: 24px; height: 24px; margin: 14px 3px 0px 0px; }
+.carlist { margin: 7px 10px 10px 10px; float: left; font-size: 12px; }
+.select { border: solid 1px #fff; }
+div .okbtn { font-family: Tahoma, Geneva, sans-serif; font-size: 12px; color: #000; float: left; }
+.okbtn { background-color: #d1a300; padding: 4px 5px 0px 3px; height: 18px; font-family: Arial, Helvetica, sans-serif; color: #ffffff !important; font-size: 13px !important; text-align: center; width: 48px; margin-right: 11px; font-weight: bold; margin-top: 7px; border: solid 1px #fff; }
+	.okbtn a { text-decoration: none; color: #ffffff; }
+.notificationContainer { max-height: 360px; max-width: 450px; overflow: auto; min-width: 350px; }
+/* Preloader Style ***/
+.preLoader { background-color: #000; display: block; opacity: 0.4; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2147483643; }
+.PrProgress { border: 1px solid #4094D0; width: 180px; -webkit-box-shadow: 0px 2px 10px 5px rgba(000, 000, 000, 0.5); -moz-box-shadow: 0px 2px 10px 5px rgba(000, 000, 000, 0.5); box-shadow: 0px 2px 10px 5px rgba(000, 000, 000, 0.5); z-index: 2147483645; position: relative; }
+.PrHeader { background-color: #5DB1ED; color: #FFFFFF; font-family: arial; font-size: 13px; font-weight: bold; height: 22px; padding-left: 5px; padding-top: 2px; }
+.PrBody { padding: 20px; background-color: White; }
+.ie8 .igdt_LucidDreamNodeHolder a, .ie9 .igdt_LucidDreamNodeHolder a {float:left; }
+input[type=text] {height:18px;}
+#navigation #brand {font-weight:bold;}
+

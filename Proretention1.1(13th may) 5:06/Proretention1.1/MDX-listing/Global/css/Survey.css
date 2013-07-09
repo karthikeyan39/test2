@@ -1,0 +1,46 @@
+﻿.PanelHeader
+{
+	background-color: #D7E5F7;
+	background-image: url("images/igg_pagerbg.gif");
+	background-repeat: repeat-x;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	height: 25px;
+	padding-left:3px;
+}
+
+
+
+.PanelGroup
+{
+	background: url("../images/bg-nav.jpg") repeat-x;
+	display: block;
+	height: 25px;
+	padding-top: 6px;
+	width: 100%;
+}
+
+.Panelsection
+{
+	background-color: #C1C1C1;
+	background-image: url("images/igg_pagerbg.gif");
+	background-repeat: repeat-x;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	height: 25px;
+}
+
+
+.PanelHistory
+{
+	border: 1px solid #8098B7;
+	border-radius: 5px 5px 5px 5px;
+	height: 17px;
+	padding-left: 50px;
+	color: #000080;
+	font-size: 16px;
+	-moz-box-shadow: 3px 2px 17px 16px #B3D4FF;
+	-webkit-box-shadow: 3px 2px 17px 16px #B3D4FF;
+	box-shadow: 3px 2px 3px 3px #B3D4FF;
+}
+

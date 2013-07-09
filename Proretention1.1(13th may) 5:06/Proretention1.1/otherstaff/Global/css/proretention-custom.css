@@ -1,0 +1,13 @@
+/*
+ *  Proretention 3.0.3
+ *  -------------------------------------------------------
+ *  Added By: Prasath Pree
+ */
+.icon-create-ticket { background:url(plugins/custom/create-ticket.png) no-repeat;} .icon-create-ticket:before{content:""}
+.icon-search-faq:before{content:""} .icon-search-faq { background:url(plugins/custom/search-faq.png) no-repeat;}
+.calendar{margin-top:0px;}
+#navigation .main-nav > li > a { border-right:2px solid #808080;}
+.pull-right a {text-decoration:none;}
+footer {background-color:#333333;color:#fff;min-width:98%;padding:3px;text-align:center;}
+#toTop {display: none;position: fixed;bottom: 5px;right: 5px;width: 28px;height: 28px;background-image: url('../Images/pintop.png');background-repeat: no-repeat;opacity: 0.4;z-index:999999999;cursor:pointer;filter: alpha(opacity=40); /* For IE8 and earlier */}
+#toTop:hover {opacity: 0.8;filter: alpha(opacity=80); /* For IE8 and earlier */}

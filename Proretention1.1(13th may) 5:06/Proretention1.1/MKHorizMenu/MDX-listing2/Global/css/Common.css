@@ -1,0 +1,108 @@
+﻿/*      CSS for Button to Image         */
+.imgemailicon { cursor: pointer; height: 12px; width: 12px; src: url(../Images/email-icon.png); }
+.imgphoneicon { cursor: pointer; height: 12px; width: 12px; background-image: url(../Images/phone - icons.png); }
+.imgprofileicon { cursor: pointer; height: 12px; width: 12px; background-image: url(../Images/profilename-icon.png); }
+.imgbtnClose { border: none; background: transparent; cursor: pointer; position: relative; left: 98%; top: 13px; z-index: 99999; background-image: url(../Images/button_cancel.png); }
+.imgbtn { border: none; background: transparent; cursor: pointer; }
+.imgbtnsearch { border: none; background: transparent; cursor: pointer; background-image: url(../Images/search-icon.png); width: 16px; height: 16px; }
+.buttonstyle { -webkit-box-shadow: rgba(0,0,0,0.0.1) 0 1px 0 0; -moz-box-shadow: rgba(0,0,0,0.0.1) 0 1px 0 0; box-shadow: rgba(0,0,0,0.0.1) 0 1px 0 0; background-color: #5B74A8; border: 1px solid #29447E; font-family: 'Lucida Grande' ,Tahoma,Verdana,Arial,sans-serif; font-size: 12px; font-weight: 700; padding: 2px 6px; height: 28px; color: #fff; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.linkbutton { border: none; background: transparent; cursor: pointer; }
+.imgbtnsave { border: none; background: transparent; cursor: pointer; background-image: url(../Images/save-icon.png); height: 16px; width: 16px; }
+.imgbtnedit { border: none; background: transparent; cursor: pointer; background-image: url(../Images/Edit-icon.png); height: 16px; width: 16px; }
+.imgbtndelete { border: none; background: transparent; cursor: pointer; background-image: url(../Images/button_cancel.png); height: 16px; width: 16px; }
+.imgbtnRefresh { border: none; background: transparent; cursor: pointer; background-image: url(../Images/refresh_icon.png); height: 16px; width: 16px; }
+.imgbtnfilter { border: none; background: transparent; cursor: pointer; background-image: url(../Images/filter-icon.png); height: 16px; width: 16px; }
+.imgbtnexport { border: none; background: transparent; cursor: pointer; background-image: url(../Images/excel-icon.png); height: 16px; width: 16px; }
+.imgbtnexport { border: none; background: transparent; cursor: pointer; background-image: url(../Images/excel-icon.png); height: 16px; width: 16px; }
+.inputbutton { width: 70px; height: 24px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; text-align: center; color: #fff; background-color: #107398; border: none; }
+.button { background-color: #4B80B6; color: #FFFFFF; border: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; height: 22px; width: 70px; font-weight: bold; font-style: normal; cursor: pointer; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.buttonlarge { background-color: #4B80B6; color: #FFFFFF; border: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; height: 22px; width: 230px; font-weight: bold; font-style: normal; cursor: pointer; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.imgbtnleft { border: none; background: transparent; cursor: pointer; background-image: url(../Images/navigate-left.png); height: 24px; width: 24px; }
+.imgbtnright { border: none; background: transparent; cursor: pointer; background-image: url(../Images/navigate-right.png); height: 24px; width: 24px; }
+/*      CSS for Button to Image         */
+/*      CSS for Text Box*/
+.txtBox { border: solid 1px #8098B7; width: 220px; height: 17px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; padding-left: 5px; }
+    .txtBox hover { border: solid 1px #B3D4FF; width: 220px; height: 17px; }
+.DatePicker { width: 220px; border: solid 1px #B3D4FF; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.txtSearchGrid { border: solid 1px #6593CF; width: 200px; background-image: url(../Images/Search1.png); background-repeat: no-repeat; padding-left: 5px; }
+.txtSearchBox { border: solid 1px #6593CF; width: 200px; background-image: url(../Images/Search1.png); background-repeat: no-repeat; height: 18px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding-left: 5px; }
+.maskedit { border: solid 1px #8098B7; width: 220px; height: 17px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; padding-left: 5px; }
+/*      CSS for Text Box*/
+.userleftbox { clear: both; }
+.usersearchbox { clear: both; }
+.usersearhresult { clear: both; height: 300px; overflow-y: auto; }
+.Content { width: 100%; }
+.userrightbox { clear: both; }
+.usereditarea { clear: both; }
+.pnlSearch { float: left; /*height: 25px;     background-color: #CDE2FF;*/ height: 24px; line-height: 24px; padding-left: 5px; border: 1px solid #3b5a82; background: url(../../../images/bg-headingtxt.jpg) repeat-x; font-size: 13px; color: #1e395b; font-weight: bold; width: 99.6%; }
+.pnlbgcolor { background-color: #E6E6E6; }
+#ctl00_cnt_UserConfig1_UserList1_Accordion2 { -moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: Transparent; border-color: #123554; border-style: solid; border-width: 0 1px 1px; color: Black; font-family: Segoe UI,Verdana,Helvetica,sans-serif; font-size: xx-small; overflow-x: hidden; }
+.accordionHeader5 { background-repeat: repeat-x; background-image: url(../../../images/bg-search.jpg); display: block; height: 30px; overflow: hidden; line-height: 30px; color: White; vertical-align: middle; cursor: pointer; }
+.accordionHeaderSelected5 { background-repeat: repeat-x; /* background-position: 0px -30px;*/ background-image: url(../../../Images/bg-search.jpg); color: White; height: 30px; cursor: pointer; }
+    .accordionHeaderSelected5 figure { background-image: url(../Images/igeb_ExpanderExpanded.png); background-repeat: no-repeat; display: block; float: right; height: 12px; margin-right: 10px; margin-top: 5px; width: 12px; cursor: pointer; }
+.accordionHeader5 figure { background-image: url(../Images/igeb_ExpanderNormal.png); background-repeat: no-repeat; display: block; float: right; height: 12px; margin-right: 10px; margin-top: 5px; width: 12px; cursor: pointer; }
+.lblaccordianheader { font-family: Segoe UI,Verdana,Sans-Serif; font-size: 12px; font-weight: bold; margin-left: 5px; padding-left: 5px; text-decoration: none; line-height: 30px; }
+body {  }
+.WebImageButton {  }
+.PageHeader { color: #000000; font-weight: bold; font-size: 12px; font-family: Arial, Helvetica, sans-serif; padding-left: 5px; }
+.SubHeader { color: #000000; font-weight: bold; font-size: 11px; font-family: Arial, Helvetica, sans-serif; padding-left: 5px; }
+.FrameHeader { background-color: #E7F3FF; color: #276FBB; font-weight: bold; font-size: 14px; font-family: Arial, Helvetica, sans-serif; padding-left: 5px; }
+.infraimgbtn { cursor: pointer; height: 16px; width: 16px; }
+.linkbuttonavdsearch { cursor: pointer; font-weight: bold; font-size: 12px; background-color: MintCream; border: medium none; border-radius: 4px 4px 4px 4px; color: #404E7C; cursor: pointer; padding: 1px 5px; }
+    .linkbuttonavdsearch:hover { background-color: #276FBB; color: White; }
+.linkbuttonavdsearchactive { cursor: pointer; font-weight: bold; font-size: 12px; background-color: #FF9531; border: medium none; border-radius: 4px 4px 4px 4px; color: White; cursor: pointer; padding: 1px 5px; }
+.ListView {  }
+.menubg { background-color: #E7F3FF; }
+.footer { background-color: #B3D4FF; text-align: right; padding-right: 15px; height: 20px; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; }
+.PanelMenu { height: 60px; background-color: #E7F3FF; }
+.pnlRoot { border-top: 0px; border: solid 1px #6593CF; width: 100%; }
+.PnlScroll { padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px; overflow-y: auto; overflow-x: hidden; }
+.PanelPAdding {  }
+.pnlHeader { height: 25px; background-color: #CDE2FF; border-top-left-radius: 30px; border-top-right-radius: 30px; padding-left: 20px; padding-right: 20px; }
+.roundpnlborder { border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; }
+.RadioButtonList { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; }
+    .RadioButtonList label { padding: 0px 5px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; clear: left; display: block; float: right; margin-right: 10px; vertical-align: middle; text-align: right; }
+.listbox { width: 350px; height: 150px; border: solid 1px #B3D4FF; overflow: auto; }
+.igpnlBorder { border: solid 1px #B3D4FF; /*border: solid 1px #0B7295; by anand*/ }
+.igpnlpopupBorder { background-color: #fff; border: 3px solid #0B7295; padding: 8px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
+.pnlBorder { border: solid 1px #B3D4FF; /*border: solid 1px #0B7295; by anand*/ }
+    .pnlBorder fieldset { padding-left: 15px; padding-right: 15px; }
+    .pnlBorder fieldset { border: solid 1px #B3D4FF; /* height: 150px;*/ padding: 5px 5px 5px 5px; }
+        .pnlBorder fieldset legend { color: #276FBB; font-weight: bold; font-size: 12px; font-family: 'Microsoft Sans Serif'; padding-left: 5px; }
+.checkedlistbox { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; }
+.lblText { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; }
+.lblTextprofileticket { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; color: Gray; }
+.lblTextbold { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; }
+.linkbutton { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; color: Black; }
+.chkbox { padding-bottom: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; text-align: right; }
+    .chkbox label { padding: 0px 5px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; clear: left; display: block; float: left; margin-left: 10px; vertical-align: middle; }
+.ddlnormal { width: 220px; /*border: solid 1px #B3D4FF;*/ height: 20px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.ddlnormalreq { width: 220px; /*border: solid 1px #B3D4FF;*/ height: 20px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.igcell_single_tree { border: solid 1px #7ab8d6; vertical-align: top; width: 50%; }
+.allow_auto_scroll { overflow: auto; }
+.allow_auto_scroll1 { overflow: auto; border: solid 1px #858585; }
+.igcell_map_tree { border: solid 1px #7ab8d6; vertical-align: top; width: 50%; }
+.allow_auto_scroll { overflow: auto; }
+.cell_single_tree { border: solid 1px #7ab8d6; vertical-align: top; width: 50%; }
+.cell_map_tree { border: solid 1px #7ab8d6; vertical-align: top; width: 50%; }
+.trfont { color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; }
+.roundpnl { border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; border: solid 1px #B3D4FF; }
+.lblhomeheader { color: #000000; font-weight: bold; font-size: 12px; font-family: Arial, Helvetica, sans-serif; padding-left: 0px; }
+.PanelSearchround { border-top-left-radius: 15px; border-top-right-radius: 15px; background-color: #B3D4FF; height: 20px; line-height: 20px; padding-left: 15px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; }
+.PanelSearchroundcorner { border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border: solid 1px #B3D4FF; }
+.myaccountinfodisplaynone { display: none; }
+.myaccountinfodisplayblock { position: absolute; top: 10%; right: 4%; width: 30%; height: auto; z-index: 100000; display: block; }
+#ctl00_Panel2 { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); -moz-box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.7); box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.7); }
+.arrow-up-ico { width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 20px solid #0B7295; display: block; left: 48.5%; position: relative; top: 15px; }
+.hidden { display: none; }
+.show { display: block; }
+.button-blue { background: -moz-linear-gradient(center top , #29809E, #ABCDFF) repeat scroll 0 0 transparent; border: 1px solid #ABCDFF; color: #FFFFFF; font-size: 13px; font-weight: bold; padding: 2px 5px; }
+.tableHeader { background: #4285F4; /* Old browsers */ background: -moz-linear-gradient(top, #4285F4 0%, #23538a 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4285F4), color-stop(100%,#23538a)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #4285F4 0%,#23538a 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #4285F4 0%,#23538a 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #4285F4 0%,#23538a 100%); /* IE10+ */ background: linear-gradient(to bottom, #4285F4 0%,#23538a 100%); /* W3C */ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4285F4', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */ height: 25px; }
+.HeaderTitle { color: #fff; font-size: 12px; font-weight: bold; padding: 3px; vertical-align: top; }
+.rowHeader { background-color: #C8E6F1; }
+.pnlpopupBorder { background-color: #fff; border: 3px solid #0B7295; padding: 8px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
+.pnlpopupcontent { border: 0px; border: 2px solid #6593CF; }
+.Searchpnl { width: 100%; background: url(../../Global/images/bg-bluesearch.jpg) repeat; }
+.pnlalternatecolor { background-color: #FAEAD0; }
+/*** Height fix for UserMaster.aspx screen ***/
+#ctl00_cnt_UserConfig1_UserList1_gvuser { height: 320px !important; }

@@ -1,0 +1,156 @@
+.search-box form{
+background:#f2f2f2;
+padding:20px 25px 20px 25px;
+overflow:hidden;
+}
+.listing{
+margin-bottom:20px;
+padding-top:10px;
+}
+.listing-style:nth-child(odd){
+border-top:3px solid #00A3A3;
+background:#f2f2f2;
+}
+.listing-style:nth-child(even){
+border-top:3px solid #D39D09;
+background:#fff;
+}
+.listing-details{
+padding:0px 5px;
+}
+.listing-details span{
+line-height:25px;
+}
+.listing-details p{
+padding-top:10px;
+}
+.listing-details span a{
+color:#006AC1;
+}
+.listing-details span a.listing-title{
+font-size:20px;}
+
+.listing-details p a{
+color:#006AC1;
+}
+.listing-details ul{
+margin:0;
+padding:0;
+}
+.listing-details ul li{
+display:inline-block;
+padding:5px 10px 5px 0;
+}
+.listing-details .rating-list .l{
+list-style:none;
+display:inline-block;
+padding:5px 10px 5px 0;;
+}
+.listing-details .rating-list .l:first-child{
+font-weight:bold;
+}
+.listing-details ul li img{
+padding-right:5px;
+cursor:pointer;
+}
+.listing-details ul li a{
+color:#1FAEFF;
+}
+span.listing-breadcrumb i{
+padding:0 5px;
+}
+.listing-relevancy h6{
+color:#FE7C22;
+}
+span.listing-pagination{
+font-weight:600;
+padding-right:20px;
+
+vertical-align:top;
+}
+.modal-header{
+background:#00A3A3;
+color:#FFF;
+}
+.modal-header span{
+color:#FFF;
+}
+.modal-header span a{
+color:#FFF;
+}
+.listing-user{
+border:1px solid #f2f2f2;
+padding:3px;
+-moz-box-shadow: 2px 1px 5px #f2f2f2;
+-webkit-box-shadow: 2px 1px 5px #f2f2f2;
+box-shadow: 2px 1px 5px #f2f2f2;
+}
+.listing-user img{
+float:left;
+margin-right:10px;
+}
+.user-details{
+float:left;
+}
+.user-details h5{
+margin:0;
+}
+.user-details h5 span{
+color:#4294DE;
+}
+dl{
+margin:0;
+}
+dl dd{
+color:#4294DE;
+margin-left:170px;
+font-weight:bold;
+}
+dl dt{
+float:left;
+}
+.listing-details span img{
+vertical-align:middle;
+}
+.listing-details span a{
+vertical-align:top;
+}
+.article-post{
+margin-top:20px;
+}
+.listing-relevancy p{
+	color:#1B58B8;
+}
+.listing-relevancy p a{
+margin-right:3px;
+}
+.file-edit a{
+padding:0 10px;
+}
+.sortby{
+margin:10px 0;
+}
+/*****************************
+=rating
+*****************************/
+@font-face{ 
+font-family: 'WebSymbolsRegular';
+src: url('../fonts/websymbols-regular-webfont.eot');
+src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+     url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+     url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+}
+/* ---------- Lists ---------- */
+.rating-w-fonts li {
+	font: 18px/36px 'WebSymbolsRegular', sans-serif;
+	display: inline;
+
+	color: #202124;
+	text-shadow: 1px 1px 0px #323439;
+	
+	cursor: pointer;
+	padding:0 2px;
+}
+
+.rating-w-fonts li.rated, .rating-w-fonts li:hover { color: #E1B700; }

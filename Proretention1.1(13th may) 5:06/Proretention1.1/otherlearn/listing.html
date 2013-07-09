@@ -1,0 +1,1422 @@
+<!doctype html>
+<html>
+<head id="ctl00_Head1"><title>
+	Listing
+</title>
+
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!-- Apple devices fullscreen -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- Apple devices fullscreen -->
+<title>Student Portal</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="Global/css/bootstrap.min.css" />
+<!-- Bootstrap responsive -->
+<link rel="stylesheet" type="text/css" href="Global/css/bootstrap-responsive.min.css" />
+<!-- jQuery UI -->
+<link rel="stylesheet" type="text/css" href="Global/css/plugins/jquery-ui/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="Global/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css" />
+<!-- Theme CSS -->
+<link rel="stylesheet" type="text/css" href="Global/css/style.css" />
+<!-- Color CSS -->
+<link rel="stylesheet" type="text/css" href="Global/css/themes.css" />
+<!-- CCP Custom CSS -->
+<link rel="stylesheet" type="text/css" href="Global/css/proretention-custom.css" />
+<link rel="stylesheet" type="text/css" href="css/listing-style.css">
+<!--[if IE 8]>
+    <style>.stdimg {max-width:30px !important;}</style>
+    <![endif]-->
+<!-- jQuery -->
+
+<script type="text/javascript" src="Global/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap -->
+
+<script type="text/javascript" src="Global/js/bootstrap.min.js"></script>
+
+<!-- Bootbox -->
+
+<script type="text/javascript" src="Global/js/plugins/bootbox/jquery.bootbox.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Theme framework -->
+
+<script type="text/javascript" src="Global/js/ccp-proretention.min.js"></script>
+
+
+
+
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="Global/img/favicon.ico" />
+<!-- Apple devices Homescreen icon -->
+<link rel="apple-touch-icon-precomposed" href="Global/img/apple-touch-icon-precomposed.png" />
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<script>
+$(function() {
+$(".search-show").hide();
+});
+</script>
+</head>
+<body class="theme-grey" data-theme="theme-grey">
+
+	<div id="main">
+		<div class="container-fluid">
+			<div class="page-header" style="border-bottom:1px solid #f2f2f2;">
+                <div class="pull-left">
+                    <h1>Search</h1>
+					
+                </div>
+				<div class="pull-right article-post">
+					<a href="#postarticle" role="button" data-toggle="modal" class="btn btn-primary btn-large">Post Artcile</a>
+				</div>
+            </div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span8">
+					<div class="search-box span12">	
+						<div class="row-fluid">
+						<form class="form-inline" id="search-from" action="listing.html">
+							
+							<div class="span6">
+						
+								<input type="text" id="query" name="search-query" class="input-medium span12" required="required" placeholder="Word or Phrase">
+							</div>
+							
+							<div class="span4">
+						
+								<select name="category" class="input-medium span12">
+								<option value="All Subjects">All Subjects</option>
+									<option value="Accounting and Finance ">Accounting and Finance</option>
+									<option value="Advertising">Advertising</option>
+									<option value="Art and Design">Art and Design</option>
+									<option value="Biomedical">Biomedical</option>
+									<option value="Business and Management">Business and Management</option>
+									<option value="Complementary Health">Complementary Health</option>
+									<option value="Computer Science">Computer Science</option>
+									<option value="Creative Writing">Creative Writing</option>
+									<option value="Criminology">Criminology</option>
+									<option value="Dance">Dance</option>
+									<option value="Economics">Economics</option>
+									<option value="Education">Education</option>
+								</select>
+							</div>
+							<div class="span2">
+								<input type="submit" id="search-listing" class="btn btn-primary search-btn" value="Search" name="search">
+							</div>
+						</form>
+						</div>
+						<strong class="search-show">You Searched for "<span class="search-text"></span>"</strong>
+					</div>
+				</div>
+				
+				<div class="span4 listing-user">
+					<div class="span4"><img src="images.jpg" style="width:100px;height:100px;"></div>
+					<div class="span8">
+						<div class="user-details">
+							<h5>Hello <span>Aaron Davidson</span></h5>
+							<dl>
+								<dt>Total Points</dt>
+								<dd>285</dd>
+								<dt>Contributed Articles</dt>
+								<dd>&nbsp;&nbsp;&nbsp;&nbsp;2</dd>
+								<dt>Reviewed Articles</dt>
+								<dd>&nbsp;&nbsp;20</dd>
+								<dt>Level</dt>
+								<dd>&nbsp;&nbsp;&nbsp;&nbsp;2</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="form-inline pull-right sortby">
+					<label for="sortby">Sort  by:</label>
+							<select name="category" class="input-medium">
+								<option value="a-z">A-Z</option>
+								<option value="articles">Articles</option>
+								<option value="documents">Documents</option>
+								<option value="most-like">Most Reviewed</option>
+								<option value="Relevancy">Relevancy</option>	
+								<option value="video">Video</option>
+							</select>
+							</div>
+				</div>
+				
+			</div>
+			<div id="listing-container">
+			<div class="row-fluid listing-style" id="one">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-file.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal" class="listing-title" role="button" data-toggle="modal">Modern Computer Networking and its Importance for Business</a></span><br>
+						<span>Submitted by Sarah Jones on 21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Computer networking is the connecting of two or more computers that allows them 
+							to share resources. It can be done between computers in a home, 
+							in a business, across a corporation, 
+							and even internationally. It can equally be defined as a method of connecting 
+							two or more computer systems together ... <a href="#">Read more</a>(825 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(2520 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(20)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-staff.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">100%</p>
+						
+						
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid listing-style" id="two">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-video2.jpg" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal1" class="listing-title" role="button" data-toggle="modal">Computer Network Solutions</a></span><br>
+						<span>Submitted by Natisha Nelon 21-06-2013 02.05.10</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							E-Computer network solutions What is a Computer Network? A computer network refers to 
+							an interconnected group of computers. The networks may be classified according to the 
+							network layer at which they function depending upon the basic reference models. 
+							The reference models may differ from industry to industry, just like the ... 
+							<a href="#">Read more</a>(493 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(2156 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(43)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-staff.png" style="width:45px;height:45px;">
+						
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">91%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="three">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-pdf.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal2" class="listing-title" role="button" data-toggle="modal">Computer networking is a highly demanded profession</a></span><br>
+						<span>Submitted by Sarah Jones on 21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							In the world of advanced technology and computers, networking is the 
+							most crucial practice of linking two or more computing devices together 
+							for the purpose of sharing data. Networks are built with a mix of 
+							computer hardware and computer software. Computer networking can simplify 
+							one's technical abilities if they possess ... <a href="#">Read more</a>(499 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(2526 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(40)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-student.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">87%</p>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid listing-style" id="four">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-file.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal3" class="listing-title" role="button" data-toggle="modal">Computer Network - All-inclusive Watch</a></span><br>
+						<span>Submitted by Georgette Adanas on 21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Wireless networks permit people to communicate, accessibility to programs 
+							and facts without having wires. That means that access to the 
+							flexibility of motion and the capacity to develop the apps in 
+							unique areas of the establishing, or close the metropolis 
+							anywhere in the world. Men and women, for illustration, although ... 
+							<a href="#">Read more</a>(852 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+									<li>R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(1026 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(9)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-staff.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">85%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="five">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-doc.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal4" class="listing-title" role="button" data-toggle="modal">The Basics of Computer Network Hardware</a></span><br>
+						<span>Submitted by HP Servers on 21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Of course, any network will need computers. If you're quite new in to the subject a 
+							good first lesson would be to attempt to connect two computers 
+							either by ethernet cable or wirelessly to ensure that they can share 
+							information. If it is possible to do this, you have created ... 
+							<a href="#">Read more</a>(722 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(2106 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(73)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-student.png" style="width:45px;height:45px;">
+						
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">83%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="six">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-video2.jpg" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal5" class="listing-title" role="button" data-toggle="modal">Effective Computer Networking Resources For Small Business Needs</a></span><br>
+						<span>Submitted by Penny Lee on 2013-06-20 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Small businesses often struggle to build and grow, 
+							simply because they do not have the capital to invest in technology 
+							or software systems that the bigger corporations are using. Computer 
+							networking is one of the best ways to start integrating new technology 
+							into a small business and will enable any ... 
+							<a href="#">Read more</a>(515 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(3586 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(81)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-student.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">81%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="seven">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-doc.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal6" class="listing-title" role="button" data-toggle="modal">Computer Network Training for Newbies</a></span><br>
+						<span>Submitted by Aaron Shelton  21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Computer networking training is a must have for any professional 
+							in the IT (Information Technology) field today. 
+							Networks are connecting almost everything we use 
+							in the computer world. Printers are connected via 
+							networks, computers are networked together, 
+							we connect to servers the world over through 
+							the largest network in the world (the Internet).. 
+							<a href="#">Read more</a>(506 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(1586 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(52)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-staff.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">78%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="eight">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-file.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal7" class="listing-title" role="button" data-toggle="modal">Computer Network Security</a></span><br>
+						<span>Submitted by Martin Mathew on 21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Computer network security is a subject that gives rise 
+							to concern among network owners and users. It's not enough that 
+							computers are inherently vulnerable to Trojans and viruses, 
+							now networks can be penetrated by hackers too for either fun 
+							or malicious reasons. Protecting your network is an essential responsibility..  
+							<a href="#">Read More</a>(603 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(2745 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(38)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-student.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">75%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="nine">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-file.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#" class="listing-title">Network Administrator  - a Brilliant Career</a></span><br>
+						<span>Submitted by Sarah Jones on 21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							They're also referred to as Network Operator, Network Support Technician, 
+							NT, LAN Technician, LAN Administrator or Method Administrator. 
+							You will discover some reputed colleges and institutes which supply 
+							complete education plan for intrigued individuals. The excellent 
+							thing about this occupation is that you require to not possess a 
+							specified engineering .. <a href="#">Read More</a>(888 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(4586 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(86)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-student.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">72%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="ten">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-pdf.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal8" class="listing-title" role="button" data-toggle="modal">Computer Networking To The World Wide Web</a></span><br>
+						<span>Submitted by Sonia Dixon on 18-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Computer networking in internet marketing is rapidly becoming 
+							one of the most effective advertising options available today. 
+							The Internet reaches a worldwide audience of millions, and is 
+							available 24 hours a day. This is one of the reasons why more 
+							and more potential customers are turning to the Internet; people ... 
+							<a href="#">Read more</a>(648 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(1476 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(26)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-student.png" style="width:45px;height:45px;">
+						
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">72%</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row-fluid listing-style" id="leven">
+				<div class="listing">
+					<div class="file-edit span1">
+						<a href="#"><img src="listing-file.png" style="width:64px;height:64px;"></a>
+					</div>
+					<div class="listing-details span9">
+						<span><a href="#myModal9" class="listing-title" role="button" data-toggle="modal">Introduction to Computer Network Architectures</a></span><br>
+						<span>Submitted by Zafer Imran on 21-06-2013 02.05:50</span><br>
+						<span class="listing-breadcrumb">
+							<a href="#">Division</a><i class="icon-chevron-right"></i>
+							<a href="#">Computer</a><i class="icon-chevron-right"></i>
+							<a href="#">Networks</a>
+						</span><br>
+						<p>
+							Network architecture means design of computers, devices and media in a network. 
+							The computer network can be designed using different ways. 
+							The most popular network architectures are described below. 
+							File-Server Network: In File-Server computer network, a powerful 
+							computer having disk with large storage capacity and processing power is installed as ... 
+							<a href="#">Read more</a>(654 words)
+						</p>
+						<ul class="rating-list">
+							<li class="l">Rate this article:</li>
+							<li class="l">
+								<ul class="rating-w-fonts">
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li class="rated">R</li>
+									<li>R</li>
+								</ul>
+							</li>
+							<li class="l">(1428 Reviews)</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">View Comments(16)</a>
+							</li>
+							<li class="l">
+								<a href="#comments" role="button" data-toggle="modal">Post Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="listing-relevancy span2">
+						<p href="#" class="text-center">
+						Posted By<br><br>
+						<img src="Global/Images/listing-staff.png" style="width:45px;height:45px;">
+						<a href="#"><img src="chat_2.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="Global/Images/phone - icons.png" style="width:22px;height:22px"></a>
+						<a href="#"><img src="face-time.png" style="width:22px;height:22px"></a>
+						</p>
+						<h6 class="text-center">Relevancy</h6>
+						<p class="text-center">72%</p>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+			
+			<div class="row-fluid">
+				
+				<div class="span12">
+					<div class="pagination pagination-min pagination-centered">
+					<span class="listing-pagination">Page 1 of 10</span>
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">.</a></li>
+							<li><a href="#">.</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Modal popup start here-->
+	<!-- Modal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Modern Computer Networking and its Importance for Business</h3>
+			<span>Submitted by Sarah Jones on 21-06-2013 02.05:50 (3,000 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Computer networking is the connecting of two or more computers that allows them to share resources. It can be done between computers in a home, in a business, across a corporation, and even internationally. It can equally be defined as a method of connecting two or more computer systems together including printers and other devices.
+				The benefits of networking are considerable, even on a network of only three systems. In computer networking there was never a truer statement than that this is a case of advantages experienced being far greater than the sum of the parts. PC networking is, as a consequence, a rapidly evolving discipline with many exciting opportunities. Challenges that arise in networking and particularly in the Internet tend to be truly global and have the potential to impact upon millions of users.
+			</p>
+			<p>
+				One huge and growing impact is Internet shopping. Shopping online has grown over the last 10 years to become a huge market, and if a sales business does not today incorporate this technology use they will fall behind their competitors.
+				But computer networking is also producing much more subtle uses within our societies. For example, Internet technologies can be deployed to favorably condition empathic response in those who have offended against community norms out of a lack of appreciation for the effects that their criminal behavior has on other people. In other words Internet linked devices can track home prisoners to maintain their behavior, in ways that 20 years ago had not even entered the heads of science-fiction writers, to the benefit of society as a whole.
+				Wireless Internet technology, is the development, also known as WiFi, which is really taking over the way people access the Internet and it has become widely popular in a very short space of time. One reason for this is it allows individuals to access the Internet via a network hot spot, while traveling without the use of cables or wires. In short it releases us from the tyranny of wires and plugs!
+				Wireless networks are now widely used including Internet-enabled mobile phones with cellular phone networks and, within buildings, wireless networks such as Bluetooth. These are in addition to the site networks used by academic institutions and large businesses. Wireless routers must be configured immediately for security right after you set up your network. It is important to emphasis that wireless can easily also mean insecure unless users are careful to set systems up correctly.
+				So, do this right away, as soon as you have got the device running. You need to set a new password for the router and limit access to only those computers on your wireless network.
+			</p>
+			<p>
+				Informally defined “computer networking” is the foundation of the Internet. The Internet itself is easier to understand when defined as the set of users, enterprises, and content providers that are interconnected by Internet Service Providers (ISP).
+				From an engineering standpoint, and please forgive me for being rather “techie” here; the Internet is the set of subnets, and aggregates of subnets, which share the registered IP address space and exchange information about the reachability of those IP addresses using the Border Gateway Protocol. Computer networks may also be classified according to the network layer at which they operate according to some basic reference models that are considered to be standards in the industry such as the seven layer OSI reference model and the five layer TCP/IP model.
+				Companies that use their own computer networks must administer complex systems which, once deployed, become vital tools for the continued efficiency of their operations. They employ administrators who focus primarily on the day-to-day operation of networks, while network engineers deal primarily with system upgrades, security testing, and so on.
+				Given the highly technological nature of computer networks you would have thought that just maintaining and developing these would be hard enough. However, companies also routinely face ongoing challenges with the fight against damaging software, such as malware such as worms, viruses, and spyware.
+				Computer networking has enabled people to work on the move, and take work home much more efficiently than has ever been possible before. Today's mobile workforces attach numerous devices to the corporate network that are hard to control from a security policy perspective. It is a common strand that companies that maximize the use of and benefits from the capacities and capabilities of their networks are able to gather, analyze, and disseminate critical marketing information quickly, which can give them an advantage over their competitors.
+				However, data loss and system downtime can bring any business to it's knees, so in this area to use the strictly cheapest systems and labor, may be a false economy of the first order. There are many highly trained staff who participate in Microsoft's certified computer networking courses and qualification. These specialists are more than able to protect your business network day and night. They deliver network support services which include data security, data backup and disaster recovery plans.
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	
+	<div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Computer network solutions </h3>
+			<span>Submitted by Natisha Nelon 21-06-2013 02.05.10 (3124 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				E-Computer network solutions<br>
+				<strong>What is a Computer Network?</strong><br>
+				A computer network refers to an interconnected group of computers. The networks may be classified according to the network layer at which they function depending upon the basic reference models. The reference models may differ from industry to industry, just like the five-layer Internet Protocol Suite model. Computer Networks are classified on the basis of various factors like scale, connection method, network relationships and protocol.
+			</p>
+			<p>Type of Computer Networking: The common types of computer networks are:</p>
+			<ul>
+				<li>Personal Area Network (PAN)</li>
+				<li>Local Area Network (LAN)</li>
+				<li>Campus Area Network (CAN)</li>
+				<li>Metropolitan Area Network (MAN)</li>
+				<li>Wide Area Network (WAN)</li>
+				<li>Global Area Network (GAN)</li>
+				<li>Internet work - intranet, extranet and internet</li>
+			</ul>
+			<p><strong>Importance of Computer Network Solutions in Organizations:</strong></p>
+			<p>
+				With the boom of technology and e-commerce, most of the small and large businesses today are driven by the use of internet. The Internet and the influence that it has on e-commerce and business has in more than one ways become the "great equalizer" of small business and the larger corporate giants.
+			</p>
+			<p>
+				Especially in the case of small business, it is very important to maintain their computer network solutions so as to keep working properly and efficiently. A whole package of computer networking solutions complete with routine maintenance, regular updates, upgrades and support can help an organization ensure that its investment is well protected and that it can survive and thrive online.
+				Here are some of the important computer network solutions and services that can help your organization runs smoothly and efficiently:
+				Updating and upgrading software - This helps in ensuring the longevity and integrity of the online portion of your business. By installing regular software updates, you can ensure that you have the newest, safest and most efficient software for your organizationâ€™s needs.
+			</p>
+			<p>
+				Maintenance of systems using computer network support - It is advisable to find a trusted technician in your area whom you can call in to save valuable time in the event of an unexpected technical problem.
+				Routine maintenance - This helps in protecting your computers and networks from viruses and spy ware. Installing an effective virus protection software program in your system can ensure the longevity of your computer network by helping to keep it free from dangerous viruses that can threaten your information and software. Moreover the spy ware prevention software can also help keep unwanted hackers out of your systems to ensure that your sensitive information is kept secure.
+			</p>
+			<p>
+				<strong>E -Computer Network Solutions Providers:</strong><br>
+				There are many organizations that provide online computer network solutions for small, medium and large organizations. They provide cost effective and high performance computer networking solutions to build Local Area Network, Wide Area Network and Wireless LAN to access internet and share data between the computers. Some of the companies providing computer Networking Solutions online are:
+			</p>
+			<ul>
+				<li>CPC InfoTech Ltd.</li>
+				<li>JM Networking Solutions</li>
+				<li>VPP Power Net</li>
+				<li>The Computer Company</li>
+				
+			</ul>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	
+	<div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Computer Networking is a highly demanded Profession</h3>
+			<span>Submitted by Sarah Jones on 21-06-2013 02.05:50 (3015 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				In the world of advanced technology and computers, networking is the most crucial practice of linking two or more computing devices together for the purpose of sharing data. Networks are built with a mix of computer hardware and computer software. Computer networking can simplify one's technical abilities if they possess multiple computers and the different technical tools used to enhance computer functioning. When computers converse with each other through a network, tasks can be more proficient and people can save time and money. Computer networking is perfect for home or small scale businesses, and can also be wide area networks (WAN) reaching across the world to fetch shared technology for large corporations or global industries. Another important facet is computer network security which operators should be aware of when looking at computer networking through a WAN.
+			</p>
+			<p>
+				Computer networking today, is a very well established profession that is picking up immense pace with the help of various certified courses and institutes like Cisco CCNA certification and Red Hat Linux. Such courses and certifications help in polishing candidates with the best skills and knowledge that the industry expects from them. Moreover, it is also really important to pass out from a reputed institute that is well regarded by the industry standards. Thus, it is important to know your institute well before enrolling yourself with them.
+			</p>
+			<p>
+				Red Hat Linux was established in the year 1993 and became a leader in Enterprise Linux. It all began with offering a better way to build software, openness, transparency and collaboration and soon shifted the balance of power in the entire industry. Now, they serve various global enterprises with technological services made available by open source model. The services offered by Red Hat Linux includes, management services and consultations, 24x7 support, Red Hatâ€™s network, Red Hatâ€™s training programs and certifications that function across the globe and several other technical solutions that assist various enterprises. Moreover, the Red Hat Certification Program has gained tremendous appreciation for every sector. All the leading companies prefer appointing candidates that are Red Hat Linux Certified because they have an edge over the others.
+			</p>
+			<p>
+				On the other hand, Cisco CCNA certification lays down a solid foundation of networking skills that include the OSI reference model, routing concepts and protocols, networking protocols, WAN connectivity and Layer 2 switching concepts and protocols. The one who acquires the Cisco CCNA certificate will possess the skill of providing basic network installations and layer 1 trouble shooting.
+				The knowledge that one gains while pursuing this certification is of utmost importance and is extremely valuable in the field of computer networking. The two factors why Cisco CCNA certification is so popular within the industry is because the achiever of this certification possess full understanding of networking fundamentals and has the ability to configure and troubleshoot networking devices to operate in a network. Now, you have enough reasons to do a well informed research on the various institutes before you take your major step towards computer networking!
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Computer Network - All Inclusive Watch</h3>
+			<span>Submitted by Georgette Adanas on 21-06-2013 02.05:50 (3,000 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Wireless networks permit people to communicate, accessibility to programs and facts without having wires. That means that access to the flexibility of motion and the capacity to develop the apps in unique areas of the establishing, or close the metropolis anywhere in the world. Men and women, for illustration, although in the residence search in the World-wide-web, they can lookup in tranquil areas away from the sound of little ones or the rioters in front of the tv presence of the total family members. Wireless networks let consumers to interact with e-mail or surf the World wide web from everywhere they like.
+			</p>
+			<p>
+				Wireless networks exist all around us for several ages, in fact, is the early forms of radio communications by the use of Native American Leather Ox for radio contact by putting it on the fire and take out it in waves for sending smoke signals to the other through superb distances. Also the use of mild pulses carrying information and facts concerning the ships by Morse code which still form essential contacts. kind of cellular telecommunications is popular currently for talks with some folks across the community.
+			</p>
+			<p>
+				Computer Network Management Occupation Software programs<br>
+				Career plans from an associate's to a master's diploma can be finished to offer pupils with the expected task knowledge. The do the job carried out in an associate's diploma creates a groundwork for pupils to construct on inside of a career or in further academic research. The common knowing of how to build, run, and deal with networks is realized. Because of particular programs college students obtain a dynamic first look and feel into safety, software, and management. The objective is to train pupils how to run a network by mastering to resolve troubles and offering communications.The operate finished in a bachelor's diploma program paves the way for students to enter a vast selection of careers.
+			</p>
+			<p>
+				A bachelor’s degree needs to have courses that focus on normal, management, and technical education. Schooling that centers on these 3 principal classes will merge to supply college students with the right marketplace abilities. College students walk out of a career plan ready to structure, put into action, and manage networks that are essential for business enterprise operations. Some function that can be executed entails testing hardware and coming up with remedies to concerns. Desktop help, safety, remote accessibility, wireless networking, and data technological know-how are all explored in a bachelor's diploma system. In a wireless networking program students master the operation, abilities, and protection matters that are involved with connections.Additional training helps college students to obtain careers where they will create new means to network or train.
+			</p>
+			<p>
+				<strong>Laptop or computer Network Setup and Fix</strong><br/>
+				Laptop or computer Network Fix wasn't heard of a couple of a long time back just as pcs weren't deemed to be a necessity fifteen a long time in the past. They had been looked at as a large finish high end. Nonetheless, things have adjusted and you will hardly come across a residence not having a computer system in it. There can be no organization operate at optimum stages with no the support of a personal computer. The use of numerous distinctive computers situated in the exact premise demands them to be related utilizing computer system networks. Having said that, if there is a computer system networking difficulty, all personal computers may be impacted.
+			</p>
+			<p>
+				Personal computer network repair is not one thing that all folks are excellent at. A laptop or computer networking matters at the place or office needs fast awareness by an educated expert. Huntsville laptop or computer repair specialists know just what to do to get your network up and working. When your network will get setup by a network fix solutions professional you will be able to get your laptop and desktop pc communicating on your network, sharing files and a great deal extra. Huntsville personal pc repairs can present you with the perfect variety of repair service at your premise at the most competitive pricing.
+			</p>
+			<p>
+				<strong>Planning Modest Business Computer system Network - What Need to You Do?</strong><br>
+				You require to drill down the necessities every of the primary element of your core enterprise desires. For example, you require a database software to help your finance management. What application software package to order, contact the vendor and consult them to provide a presentation about their product or service and see if their solution can meet your finance want. How critical your application to assist your enterprise will be, if you don't accept any downtime - you have to have to offer redundant servers and configure them as failover / failback process. You can dig extra facts to meet your business enterprise desire concerning the finance management.
+			</p>
+			<p>
+				What about consumer account management? How do you control the protection of your network resources, who can accessibility or deny selected assets and how they can access them? This will support you to structure your logical infrastructure have to have, for instance you require to put into action Windows server with Energetic directory (AD) method which really should be integrated with your DNS.
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	
+	<div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">The basics of Computer Networking</h3>
+			<span>Submitted by HP Servers on 21-06-2013 02.05:50 (3,000 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Of course, any network will need computers. If you're quite new in to the subject a good first lesson would be to attempt to connect two computers either by ethernet cable or wirelessly to ensure that they can share information. If it is possible to do this, you have created your first network.
+			</p>
+			<p>
+				However, once you add a lot more computers, printers, scanners and other peripherals, as well as an Web connection, things get considerably much more complicated. The average home network will have most or many of these components and business networks get infinitely much more complex. So, here is a simple overview of the hardware needed to build a network.
+			</p>
+			<p>
+				<strong>Wired or wireless?</strong><br>
+				The most standard requirement associated with a network is that the distinct components appear to be connected to each other. Here, there seem to be two choices. Wired or wireless. Ethernet cable continues to be the fastest of these two and remains an vital building block of most networks, especially huge business network where high data transfer speeds appear to be essential.
+				That said, the subsequent generation of wireless is set to close the gap on ethernet cable with regards to speed, and offer a significantly better range. Already, wireless is favored in smaller networks simply because it spares the expense and the mess of ethernet cables, and is less difficult and cheaper to maintain.
+			</p>
+			<p>
+				<strong>Modems</strong><br>
+				Although networks can exist with out being connected in to the internet, It's rare in today's world. And to get a network to connect to the web a modem is required. Most modern home or small organization networks will work with a cable/ADSL modem. These frequently provide speeds of as much as 10 Mbps by ethernet. However, in reality, very few World wide web service providers can provide a connection that even comes close to this speed. Ethernet modems are the norm these days, although USB modems do exist and dial-up modems seem to be nonetheless used, though rarely for networks.
+			</p>
+			<p>
+				<strong>Routers</strong><br>
+				A router is vital for all networks as it offers the connection between the Local area Network (LAN), that is the home or little organization network, and also the Wide area Network (WAN), usually the internet. several home network will use a combined modem, router and switch that may allow the network to connect to the internet and allow any computers and peripherals on the network to communicate along with other each other. In quite big business networks the router (or sometimes a gateway is used) and switch will be individual hardware devices.
+			</p>
+			<p>
+				<strong>Switches and hubs</strong><br>
+				There is often several confusion concerning the difference between switches and hubs. Both allow computers and devices within a network to communicate with every other, but there are some significant differences between them. of the two, switches seem to be by far the better, and more expensive, option. Switches are important for larger networks due to the fact they make the transfer of Info a lot far more efficient.
+			</p>
+			<p>
+				When a switch receives data from a computer or peripheral it can determine Which device/s around the network around the network the data is intended for, and will only send it to its intended destination. This will not be noticed on a small home network but can produce a big difference on larger networks.
+			</p>
+			<p>
+				A hub is really an easier device that may connect anywhere between four and 24 devices. The data will pass throughout the hub but it the hub won't interfere With the data in any way. Therefore, data sent by means of a hub will be sent to, and may be accessed by, all devices on a network.
+			</p>
+			<p>
+				<strong>Firewalls</strong><br>
+				Hardware firewall devices aren't very necessary for home networks. The firewall software on your own individual computers' running systems' firewalls, as well as the security options provided by your router, ought to be much more than enough to protect your network.
+			</p>
+				<p>
+				However, for organization networks that are storing large amounts of sensitive Info a good hardware firewall is essential. All Info in one outside the network have to pass through this before reaching the network's significant switch. If properly configured by a network expert this should provide all the security a business needs. Further software firewall protection within the network is as well an option to secure the network further.
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<div id="myModal5" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Effective Computer Networking Resources for Small Business Needs</h3>
+			<span>Submitted by Penny Lee on 2013-06-20 (2 views) in Networks</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Small businesses often struggle to build and grow, simply because they do not have the capital to invest in technology or software systems that the bigger corporations are using. Computer networking is one of the best ways to start integrating new technology into a small business and will enable any owner to see staggering growth. Prior to moving forward, look into what it takes to set up a secure and stable system and how to benefit from it the most.
+			</p>
+			<p>
+				Technology is required in order to see any sort of success. If a small business owner does not put up the money for updated technology systems, the entire company is going to suffer. New computer systems should be put into place so that orders can be filled more quickly and employees will have no problem completing simple tasks. These computers can easily be linked together so that all information is shared throughout the entire company.
+			</p>
+			<p>
+				In order to create a strong business network, affordable hardware will need to be integrated throughout the entire establishment. This is the heart of the network and will keep things moving along. Special systems have been designed such as the Point Of Sale systems, which are used in retail establishments and even restaurants. Orders and inventory can easily be organized and updated throughout the day with the most effective hardware.
+			</p>
+			<p>
+				With everything put into place properly, the entire workforce will come together and communicate in a whole new way. The system is designed to continuously update so that all information is current at all times. Fewer kinks will arise and in turn, the company revenue is going to increase dramatically.
+			</p>
+			<p>
+				To ensure that the business computer networking connection is always secure, most companies are working with IT companies specializing in managed services. These are professionals who have the technical expertise as well as tools that can pinpoint and repair any computer networking or hardware-related issue. Owners need to do background checks on various services providers before entering into a service contract.
+			</p>
+			<p>
+				Since companies are now reaching out in brand new ways, a strong mobility connection needs to be established. Employees who go out into the field on a daily basis will need to have hardware that will enable them to place orders and integrate into the base station. Tablets are being used, as well as smartphones that offer numerous helpful applications and tools.
+			</p>
+			<p>
+				Information sharing instantly gets easier with the use of computer networking solutions. Different program options have been set up and offered to numerous companies that all require diverse aspects to become successful. Owners should look into professional services that can offer top notch and up-to-speed hardware as well as mobility options that can easily help companies branch out more.
+				Small business growth is not possible without the help of computer networking and management. Using a system that helps everyone work together and keep data organized is a great way to get on the fast track. Look for reputable computer service providers and computer networking techs that can help ensure that risk of major downtime occurrences is diminished.
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	
+	<div id="myModal6" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Computer networking for newbie</h3>
+			<span>Submitted by Aaron Shelton  21-06-2013 02.05:50 (3,000 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Computer networking training is a must have for any professional in the IT (Information Technology) field today. Networks are connecting almost everything we use in the computer world. Printers are connected via networks, computers are networked together, we connect to servers the world over through the largest network in the world (the Internet). Networking is the basis for some of the most revolutionary information sharing in the modern world. Computer networking training can provide the skills and knowledge needed to set up, troubleshoot, and repair networking issues. The technician who can successfully do this will be in great demand for some time to come. Even the home office worker will benefit from obtaining computer networking training, as many home offices are now equipped with pre-installed network jacks and / or wireless network systems.
+			</p>
+			<p>
+				Computer networking training is just like any other kind of training. You want to check out all of your options and available resources before signing the dotted line for any classes. In the IT industry, any type of training courses that you take should be taught by certified instructors, and even the school should have some certification behind it. It is important when evaluating computer networking training that you take both of these into account. It won't do you any good to take a class from an accredited school, only to be taught by someone who isn't fully qualified to teach the class. In fact, this could be a violation of the school's accrediting agency's requirements. Likewise, if your computer network training is provided by a top-notch certified instructor, but the school isn't accredited, then you will get a certificate of completing the course that is virtually useless. Don't waste your money if you're not sure.
+			</p>
+			<p>
+				You will also want to make sure that the school provides an affiliation with an outside certification for you once you complete the computer networking training. In the field of networking, the major players for certifications are CompTIA, Cisco, and Novell. While there is some debate among the various governing agencies, a quick glance on the search engines seems to point towards an edge for Cisco's certification and CompTIA's Network + certification. So why is your opportunity for certification so important when selecting computer networking training? It is simple. Certification is your means of proving you know what you say you know. Without being certified, you are simply another voice on the IT landscape, drowned out amongst the crowds.
+			</p>
+			<p>
+				So, as we have seen, computer network training is a requirement for any individual who is serious about being a computer professional. While the options may seem endless, the qualifications you need to look for are very specific, and should not be ignored. A final consideration to make when evaluating your choice of training providers is, of course, the final cost. This should include taking into account any discounted certification programs that are available at the end of the course. Obtaining good computer networking training does not have to become a chore, but should benefit everyone involved in the end.
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<div id="myModal7" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Computer Network Security </h3>
+			<span>Submitted by Martin Mathew on 21-06-2013 02.05:50 (3,000 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Computer network security is a subject that gives rise to concern among network owners and users. It's not enough that computers are inherently vulnerable to Trojans and viruses, now networks can be penetrated by hackers too for either fun or malicious reasons. Protecting your network is an essential responsibility and there are thankfully many uncomplicated ways to do that now
+			</p>
+			<p>
+				<strong>Security Risks Briefly Described</strong>
+				There are many risks in a computer network, and most of them are consequences of ignorantly exposed virtual gateways for hackers. Some of them are described below
+			</p>
+			<ul>
+				<li>Operating a network can provide unethical persons a way to request or retrieve a file or resource they aren't authorized to access. If a hacker can subtly gain access to your network as an apparent user, they'll be able to retrieve any file or information allowable for viewing by users. The main problem lies in the fact that certain information accessed by users must not get into the hands of a hacker. In the event that the resources a hacker needs are confined within the admin dashboard, all he has to do is find a way to get admin privileges within the network</li>
+				<li>Another computer network security risk is the hacking of an inadequately protected user's account that can reveal a lot of damaging information. A hacker can also execute his malicious plan for the sole purpose of deleting information and databases within a network</li>
+				<li>Falsification of data, e.g. acc. numbers in banks, is another computer network security risk. A hacker can get unauthorized access to a network in order to put stored data and information into a flawed state</li>
+				<li>DOS attacks are also dreadful for network owners, and solving the problems that follow is more complicated beyond acceptability than other risks
+					The description of computer network risks above isn't thorough, and it's definitely advisable to acquaint yourself with other risks (emphasis should be placed on the most dangerous) - It's the very first measure you can take to protect your network</li>
+				</ul>
+				<strong>How to Protect a Computer Network</strong>
+				<ul>
+				<li>Beware of the kind of software you install: Free pieces of software are distinctly suitable candidates for criticism because it's hard to find a paid piece of software that is malicious in some way. Before installing free software, take some time to read or just scan through those extensive terms you usually ignore, and do it leisurely if possible. Harmful software can come in the form of malware, adware, and spyware</li>
+				<li>Back up your files: Backing up files and other data is an effortless job. Nevertheless, it's one of the simple tasks that still face neglect today. One of the best ways to render a hacker's infiltration fruitless or insignificant (if the hacker's sole intent was to delete stored data and information) is to have a backup of your files</li>
+				<li>Use stronger security systems: Don't use systems that can be circumvented or disabled from a single point of entry. Use systems that have many distinct layers of protection incorporated into them. Some superfluity in this aspect is good</li>
+				<li>Keep abreast of computer network security issues: You can also hire an employee for this specific task</li>
+				<li>Use the latest versions of all software in use, including your system software or operating system</li>
+				<li>Make use of firewalls and a VPN</li>
+				<li>Computer network security will always be a huge topic as long as security holes remain unmended, and new holes usually appear as old ones are fixed. Security should invariably be your top priority if you want to avoid the adverse consequences that accompany security breaches.</li>
+			</ul>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<div id="myModal8" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Computer Networking to the World Wide Web </h3>
+			<span>Submitted by Sonia Dixon on 18-06-2013 02.05:50 (3,000 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Computer networking in internet marketing is rapidly becoming one of the most effective advertising options available today. The Internet reaches a worldwide audience of millions, and is available 24 hours a day. This is one of the reasons why more and more potential customers are turning to the Internet; people research products and services before making a purchase. As more and more of us turn to the Internet, it is important for businesses to establish an online presence. There is an online social networking industry. There are now many social networking sites and social networking success stories.
+			</p>
+			<p>
+				People are asking the question: what is networking? It is a question that has so many answers attached to it. Examples for networking can be home networking, business networking, broadband networking to include networking cable and networking tutorials. Networking services are so flexible and diverse - a computer network business that involves networking jobs is a possibility, for example, affiliate programs are on the list of many. Competitors can gain an edge over those who are not networking for sales. It is important for business to begin Internet marketing campaigns, and for these same businesses to realize basic advertising principles still exist even when networking; they cannot neglect these principles. Most importantly those who advertise online have to be aware of their target audience and how to reach this audience.
+			</p>
+			<p>
+				Having a computer networking system where you do some market research before you launch your Internet marketing campaign is a must. Ideally this should involve hiring a research consultant with a great deal of experience in conducting and evaluating this type of market research. The results of this research should determine the basic demographical information for the target audience on the World Wide Web. This is one of many computer-networking solutions. At the start, basic computer networking is important with results that include information on how to reach your audience. If, however, your budget cannot stretch to hiring a consultant to conduct this market research, you should still make an effort to obtain this information under your own steam, so you can have an insight into the best way to reach your audience on the World Wide Web. This networking can be done through networking mlm and affiliate programs.
+			</p>
+			<p>
+				As you obtain this information, it is important to tailor the Internet marketing campaign to appeal to your computer networking services, as the right message has to reach the right people in a manner they can understand, and in which they can relate; the wording of your copy and the use of more advanced design features such as audio, visual or interactive tools will appeal if done correctly. It would obviously have to be a website that can greatly contribute to your cause and establish how people will view you. For example, a website which is designed to attract the attention of an older generation with more conservative tastes should include muted colours, clean design and conservative graphics, to ensure the target audience enjoys the website. The language on your website should be formal with facts to back up view points.
+			</p>
+			<p>
+				However, if you are looking to appeal to a more younger audience with liberal viewpoints you might chose to design the website with bold colours that should be eye catching - graphics with a creative flair. The language on the more liberal or younger targeted website should be more informal, focussing more on emotion and express viewpoints. For both websites you may wish to include audio and video clips to appeal to your targeted audience. This may be books or videos that you are marketing. Do not forget that computer networking is important to appeal to the people you are trying to attract to your niche audience. Keeping these details in mind is very important for your business to succeed. With networking do the right thing and follow your passion!
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<div id="myModal9" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Introduction to Computer Network Architectures</h3>
+			<span>Submitted by Zafer Imran on 21-06-2013 02.05:50 (1,000 views)</span><br>
+			<span class="listing-breadcrumb">
+				<a href="#">Division</a><i class="icon-chevron-right"></i>
+				<a href="#">Computer</a><i class="icon-chevron-right"></i>
+				<a href="#">Networks</a>
+				
+			</span><br>
+		</div>
+		<div class="modal-body">
+			<p>
+				Network architecture means design of computers, devices and media in a network. The computer network can be designed using different ways. The most popular network architectures are described below.
+			</p>
+			<p>
+				<strong>File-Server Network:</strong><br>
+				In File-Server computer network, a powerful computer having disk with large storage capacity and processing power is installed as central computer. This central computer is known as File-Server, Network Server, Application Server or simply a Server. A File-Server stores and manages files. The data files and software are stored on the Server. The individual computers on a network, called nodes, access the data files and software on the Server. It means that, the File-Server is used to store files and to forward them to nodes that request for them.
+			</p>
+			<p>
+				<strong>Client/Server Network:</strong><br>Client/Server model is the most popular network model. It is also known as dedicated server model. In client/server network (or arrangement), a powerful computer is used as server. The server controls the functions of network. In addition to control the network, the server also provides a centralized storage area. The software and databases are stored on the server. Different nodes or computers connected to the network can access these software and databases.
+			</p>
+			<p>
+				All computers (other than computer server) connected in the network are called clients. The clients send requests to the server. Server receives the requests from clients and takes proper actions on these requests. It means that processing is usually done by the server. The results of processing are sent to the clients. Client/Server network may be LAN or WAN.
+				For example, in a Client/Server network, a database is stored on the Server and the Client computers access the database. The Server portion of the DBMS (Database Management system) is stored on the Server that allows the Clients to add information in database or extract information from database. Similarly, the client portion of DBMS is stored on each Client computer through which request is sent to the Server to access the database. The Server processes the data and sends the result-to the Client computer.
+			</p>
+			<p>
+				<strong>Advantages:</strong>
+				<ul>
+					<li>The client/server network has the following advantages.</li>
+					<li>It reduces the volume of data traffic on the network.</li>
+					<li>It allows faster response at each node.</li>
+					<li>It allows using less expensive computers as clients because most of the work is done by server.</li>
+				
+				</ul>
+				<strong>Disadvantages:</strong>
+				<ul>
+					<li>The main disadvantage of this network is that the entire network is affected if there is any problem in the server computer.</li>
+				</ul>
+			</p>
+			<p>
+				<strong>Peer-To-Peer Network:<strong><br>
+				In peer-to-peer (P2P) arrangement, all nodes (or computers) on the network have equal status. No one has control over others. It means that there is no central computer to control other computers on the network. Each computer stores files on its own storage devices and has its own peripheral devices. The users can share each other's data and devices (or resources) as and when needed. For example, a printer attached with any computer can be used by all computers connected in the network.
+				Peer-to-Peer network is used in small offices or schools, where primary purpose of the network is to share storage and printers. A Peer-to-Peer network can also include a Server. In this case, a Peer-to-Peer local area network is similar to a File-Server network.
+			</p>
+			<p>
+				<strong>Advantages:</strong>
+				The main advantages of peer-to-peer model are:
+				<ul>
+					<li>It is useful in small offices.</li>
+					<li>It is easy to design and to maintain.</li>
+				</ul>
+				<strong>Disadvantages:</strong>
+				<ul>
+					The main disadvantages of peer-to-peer model are:
+				<li>It becomes slow under heavy use.</li>
+				<li>It does not provide the security to protect the data stored on computers connected in the network.<li>
+				</ul>
+				Hybrid Network Model:<br>
+				The hybrid network has combined features of both client/server and peer-to-peer network (or arrangements) models. It also has a server. The users can share the data and software. Similarly, each node can store its own files, programs, and has its own peripheral devices. The users can also share each other's data and devices. These are the main advantage of hybrid arrangement.
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	
+	<div id="postarticle" class="modal hide fade" style="width:800px; margin-left:-400px; tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">Post Article</h3>
+			
+		</div>
+		<div class="modal-body">
+			    <form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label" for="articletitle">Title</label>
+						<div class="controls">
+							<input type="text" id="inputTitle" placeholder="Enter Article Title">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="content">Body</label>
+						<div class="controls">
+							<textarea style="width:600px;" name="" cols="5" rows="5" class="textarea wysihtml"></textarea>
+						</div>
+					</div>
+					<div class="control-group">
+						
+						<label class="control-label" for="keywords">Search Keywords</label>
+						<div class="controls">
+							<input type="text" id="inputTitle" placeholder="Search keywords">
+						</div>
+					</div>
+					<button type="submit" class="btn">Save as Draft</button>
+					<button type="submit" class="btn">Submit for Review</button>
+					<button type="submit" class="btn">Preview</button>
+					<button type="submit" class="btn">Publish</button>
+				</form>
+		
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<div id="comments" class="modal hide fade" style="width:800px; margin-left:-400px; tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+		
+			<span>Modern Computer Networking and its Importance for Business</span>
+			
+		</div>
+		<div class="modal-body">
+			<div class="container-fluid">
+				<div class="row-fluid listing-style">
+					<div class="listing">
+						<div class="listing-details span12">
+							<span><img src="Global/Images/profilename-icon.png"> <a href="#">C911darkwolf</a></span><br>
+							<p>
+								This was a helpful little tutorial on networking basics. Much appreciated.
+							</p>
+							<ul>
+								<li>
+									<a href="#">Reply</a>
+								</li>
+								<li>
+									<a href="#">Like</a>
+								</li>
+								<li>
+									<a href="#">Report Abuse</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid listing-style">
+					<div class="listing">
+						<div class="listing-details span12">
+							<span><img src="Global/Images/profilename-icon.png"> <a href="#">KatyPe55y</a></span><br>
+							<p>
+								Can someone help me. I am a computer networking student and I have this problem</p>
+
+								<p>Subnet 0 should be used</p>
+
+								<p>The network IP address allocated to a network admin is 172.31.0.0/20. What portion is the network address, part is the host and what is the subnet mask, how many subnets and hosts per subnet can this network support?</p>
+
+								<p>My answer is</p>
+
+								<p>As it is a class B network the network section is the first two octets of the address and the third and fourth octets are the host as 4 bits have been borrowed from the host the ip address would be broken down as follows:</p>
+
+								<p>nnnnnnnn.nnnnnnnn.sssshhhh.hhhhhhhh</p>
+
+								<p>The range of subnet is 2^4, 4 being the bits borrowed which gives us 16 subnets.</p>
+
+								<p>The number of hosts per subnet is found using the calculation (2^n)-2, n being the remaining number of hosts in this case (2^12) = 4096- 2 = 4094.</p>
+
+								<p>Would this be correct of have i missed something with the subnet 0 part</p>
+
+
+							
+							<ul>
+								<li>
+									<a href="#">Reply</a>
+								</li>
+								<li>
+									<a href="#">Like</a>
+								</li>
+								<li>
+									<a href="#">Report Abuse</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid listing-style">
+					<div class="listing">
+						<div class="listing-details span12">
+							<span><img src="Global/Images/profilename-icon.png"> <a href="#">MacMac213</a></span><br>
+							<p>
+								Here is a fantastic tool i used during my CISCO courses..
+								http://www.subnet-calculator.com/subnet.php?net_class=B</p>
+
+								<p>This is a B Classs<br>
+								16 subnets total<br>
+								4094 host.</p>
+
+								<p>Although i never had a teacher ask me to bring it down the subnet into Bits before. 
+
+							</p>
+							<ul>
+								<li>
+									<a href="#">Reply</a>
+								</li>
+								<li>
+									<a href="#">Like</a>
+								</li>
+								<li>
+									<a href="#">Report Abuse</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid listing-style">
+					<div class="listing">
+						<div class="listing-details span12">
+							<span><img src="Global/Images/profilename-icon.png"> <a href="#">JohnMcavoy</a></span><br>
+							<p>
+								I am new here networking is new for me so please can u explain the mean of nic,peripheral
+
+
+							</p>
+							<ul>
+								<li>
+									<a href="#">Reply</a>
+								</li>
+								<li>
+									<a href="#">Like</a>
+								</li>
+								<li>
+									<a href="#">Report Abuse</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<script>
+
+	
+	$("#search-listing").click(function(e){
+		var query = $("#query").val().toString().toLowerCase();
+		var new_query = ucFirstAllWords( query );
+			e.preventDefault();
+			var search = $(".listing-style:contains("+new_query+")").attr('id');
+			var listing_first =$("#listing-container .row-fluid:first-child").attr('id');
+			$(".search-text").html(query);
+			$(".search-show").show();
+			$("#"+listing_first).before("<div id='"+search+"'class='row-fluid listing-style'>"+$("#"+search).html()+"</div>");
+			
+			});
+	
+	function ucFirstAllWords( str )
+	{
+    var pieces = str.split(" ");
+    for ( var i = 0; i < pieces.length; i++ )
+    {
+        var j = pieces[i].charAt(0).toUpperCase();
+        pieces[i] = j + pieces[i].substr(1);
+    }
+    return pieces.join(" ");
+	}
+	
+</script>
+</body>
+</html>
